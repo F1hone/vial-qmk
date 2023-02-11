@@ -6,7 +6,7 @@
 #define VIAL_UNLOCK_COMBO_ROWS {0, 4}
 #define VIAL_UNLOCK_COMBO_COLS {0, 6}
 
-
+// python3 util/vial_generate_keyboard_uid.py
 
 
 
