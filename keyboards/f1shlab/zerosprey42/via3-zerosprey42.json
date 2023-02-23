@@ -1,10 +1,10 @@
 {
     "name": "Zerosprey42",
-    "lighting": "vialrgb",
-    "matrix": {
-        "rows": 7,
-        "cols": 6
-    },
+    "vendorId": "0x0002",
+    "productId": "0xBEEB",
+    "keycodes": ["qmk_lighting"],
+    "menus": ["qmk_rgb_matrix"],
+    "matrix": {"rows": 7, "cols": 6},
     "layouts": {
         "keymap": [
           [
