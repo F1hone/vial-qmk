@@ -1,0 +1,55 @@
+{
+    "keyboard_name": "xjm 17",
+    "manufacturer": "F1shlab",
+    "url": "",
+    "maintainer": "qmk",
+    "usb": {
+        "vid": "0x0282",
+        "pid": "0x0272",
+        "device_version": "1.0.0"
+    },
+    "processor": "atmega32u4",
+    "bootloader": "atmel-dfu",
+    "community_layouts": ["numpad_5x4"],
+    "matrix_pins": {
+        "rows": ["D1", "D3", "D5", "C7", "B7"],
+        "cols": ["D4", "D7", "F5", "F0"]
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": true,
+        "backlight": false,
+        "rgblight": false,
+        "audio": false,
+        "key_lock": false,
+        "rgb_matrix": true
+    },
+    "layouts": {
+        "LAYOUT_numpad_5x4": {
+            "layout": [
+                {"label": "K00 (D1,D4)", "matrix": [0, 0], "x": 0, "y": 0},
+                {"label": "K01 (D1,D7)", "matrix": [0, 1], "x": 1, "y": 0},
+                {"label": "K02 (D1,F5)", "matrix": [0, 2], "x": 2, "y": 0},
+                {"label": "K03 (D1,F0)", "matrix": [0, 3], "x": 3, "y": 0},
+                {"label": "K10 (D3,D4)", "matrix": [1, 0], "x": 0, "y": 1},
+                {"label": "K11 (D3,D7)", "matrix": [1, 1], "x": 1, "y": 1},
+                {"label": "K12 (D3,F5)", "matrix": [1, 2], "x": 2, "y": 1},
+                {"label": "K20 (D5,D4)", "matrix": [2, 0], "x": 0, "y": 2},
+                {"label": "K21 (D5,D7)", "matrix": [2, 1], "x": 1, "y": 2},
+                {"label": "K22 (D5,F5)", "matrix": [2, 2], "x": 2, "y": 2},
+                {"label": "K23 (D5,F0)", "matrix": [2, 3], "x": 3, "y": 1, "h": 2},
+                {"label": "K30 (C7,D4)", "matrix": [3, 0], "x": 0, "y": 3},
+                {"label": "K31 (C7,D7)", "matrix": [3, 1], "x": 1, "y": 3},
+                {"label": "K32 (C7,F5)", "matrix": [3, 2], "x": 2, "y": 3},
+                {"label": "K41 (B7,D7)", "matrix": [4, 1], "x": 0, "y": 4, "w": 2},
+                {"label": "K42 (B7,F5)", "matrix": [4, 2], "x": 2, "y": 4},
+                {"label": "K43 (B7,F0)", "matrix": [4, 3], "x": 3, "y": 3, "h": 2}
+           ]
+        }
+    }
+}

@@ -1,10 +1,10 @@
 {
     "name": "ZUES65",
-    "vendorId": "0x0273",
-    "productId": "0x0263",
-    "keycodes": ["qmk_lighting"],
-    "menus": ["qmk_rgb_matrix"],
-    "matrix": {"rows": 5, "cols": 15},
+    "lighting": "vialrgb",
+    "matrix": {
+        "rows": 5,
+        "cols": 15
+    },
     "layouts": {
       "keymap": [
         [
