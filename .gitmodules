@@ -21,9 +21,7 @@
 [submodule "lib/pico-sdk"]
 	path = lib/pico-sdk
 	url = https://github.com/qmk/pico-sdk.git
-[submodule "ChibiOS-Contrib"]
-	path = ChibiOS-Contrib
-	url = https://github.com/ChibiOS/ChibiOS-Contrib.git
-[submodule "lib/ChibiOS-Contrib"]
-	path = lib/ChibiOS-Contrib
-	url = https://github.com/ChibiOS/ChibiOS-Contrib.git
+[submodule "lib/lvgl"]
+	path = lib/lvgl
+	url = https://github.com/qmk/lvgl.git
+	branch = release/v8.2
