@@ -1,0 +1,17 @@
+{
+    "name": "Swiftkeys",
+    "vendorId": "0x6149",
+    "productId": "0x0101",
+    "matrix": {"rows": 1, "cols": 4},
+    "lighting": "none",
+    "layouts": {
+        "keymap": [
+            [
+                "0,0\n\n\n\n\n\n\n\n\ne0",
+                "0,1",
+                "0,2",
+                "0,3"
+              ]
+        ]
+    }
+}

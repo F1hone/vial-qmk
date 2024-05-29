@@ -1,0 +1,51 @@
+{
+    "keyboard_name": "Swiftkeys",
+    "manufacturer": "richardlee",
+    "url": "",
+    "maintainer": "F1shlab",
+    "usb": {
+        "vid": "0x6149",
+        "pid": "0x0101",
+        "device_version": "1.0.0"
+    },
+    "processor": "STM32F411",
+    "bootloader": "stm32-dfu",
+    "board": "BLACKPILL_STM32_F411",
+    "matrix_pins": {
+        "rows": ["B10"],
+        "cols": ["A6", "A5", "A4", "B6"]
+    },
+    "diode_direction": "ROW2COL",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": false,
+        "backlight": false,
+        "rgblight": false,
+        "audio": false,
+        "encoder": true,
+        "key_lock": false
+    },
+    "encoder": {
+        "rotary": [
+            {
+                "pin_a": "A9",
+                "pin_b": "A10",
+                "resolution": 4
+            }
+        ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K00 (B0,B1)", "matrix": [0, 0], "x": 0, "y": 0},
+                {"label": "K01 (B0,B2)", "matrix": [0, 1], "x": 1, "y": 0},
+                {"label": "K02 (B0,B3)", "matrix": [0, 2], "x": 2, "y": 0},
+                {"label": "K03 (B0,B4)", "matrix": [0, 3], "x": 3, "y": 0}
+           ]
+        }
+    }
+}

@@ -1,30 +1,13 @@
-/* Copyright 2022 HiryKun (@HiryKun)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 #include QMK_KEYBOARD_H
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
-  /* 默认层 */
-  [0] = LAYOUT(
+    [0] = LAYOUT(
         KC_PSLS, KC_PPLS, KC_PMNS, KC_P2  , KC_P5  , KC_PENT, KC_PDOT, KC_P8  ,
         KC_P7  , KC_P6  , KC_P9  , KC_P0  , KC_P1  , KC_PAST, KC_P3  , KC_P4  ,
-                 KC_SLEP, KC_LWIN,          KC_APP ,
-        KC_F5  , KC_F9  , KC_SLEP, KC_F10 , KC_BSLS, KC_ENT , KC_SPC , KC_BSPC,
-                 KC_DEL ,          KC_F11 ,                   KC_DOWN,
-        KC_UP  ,                            MO(1)  , KC_PAUS, KC_LEFT,
+                 KC_END,  KC_LWIN, KC_PGUP, KC_APP ,
+        KC_F5  , KC_F9  ,          KC_F10 , KC_BSLS, KC_ENT , KC_SPC , KC_BSPC,
+                 KC_PAUS,          KC_F11 ,                   KC_DOWN,
+        KC_UP  , KC_HOME,          KC_PGDN, MO(1)  , KC_DEL,  KC_LEFT,
                  KC_INS ,          KC_F12 ,                   KC_RGHT,
         KC_LALT, 			       KC_PSCR,				      KC_RALT,
                  KC_LCTL,					         KC_RCTL,
@@ -36,84 +19,36 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F4  , KC_F2  , KC_E   , KC_3   , KC_D   , KC_C   ,  	       KC_F3  ,
         KC_H   , KC_6   , KC_U   , KC_7   , KC_J   , KC_M   , KC_N   , KC_Y   ,
         KC_ESC , KC_GRV , KC_Q   , KC_1   , KC_A   , KC_Z   ,          KC_TAB ,
-                                                     KC_RSFT,          KC_LSFT
+                                                     KC_RSFT,          KC_LSFT,
+        KC_SLEP
     ),
-
-  /* Fn层 */
-  [1] = LAYOUT(
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_TRNS, KC_TRNS,          KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_NUM ,          KC_TRNS,                   KC_TRNS,
-        KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_SCRL,          KC_TRNS,                   KC_TRNS,
-        KC_TRNS, 			       KC_SYRQ,				      KC_TRNS,
-                 KC_TRNS,					         KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,		   KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,
-                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 	       KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  	       KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,
-                                                     KC_TRNS,          KC_TRNS
+    /*FN层*/
+    [1] = LAYOUT(
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  //0
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  //1
+                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             //2
+        KC_MSTP, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  //3
+                 KC_TRNS,          KC_BRID,                   KC_TRNS,           //4
+        KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_SCRL, KC_TRNS,           //5
+                 KC_TRNS,          KC_BRIU,                   KC_TRNS,           //6
+        KC_TRNS, 			             KC_TRNS,				      KC_TRNS,   //7
+                 KC_TRNS,					         KC_TRNS,                    //8
+        KC_MPLY, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,		   KC_TRNS,  //9
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,  //10
+                 KC_MSEL, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 	       KC_MNXT,  //11
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  //12
+                 KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,	 //13
+        KC_MPRV, KC_VOLD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  	       KC_VOLU,  //14
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  //15
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,  //16
+                                                     KC_TRNS,          KC_TRNS,  //17
+        KC_TRNS                                                                  //18
     )
 };
 
-// void keyboard_pre_init_user(void) {
-//   // Set our LED pins as output
-//   setPinOutput(A9);
-//   setPinOutput(C14);
-//   setPinOutput(B6);
-// }
-
-// bool led_update_kb(led_t led_state) {
-//     // writePin sets the pin high for 1 and low for 0.
-//     // In this example the pins are inverted, setting
-//     // it low/0 turns it on, and high/1 turns the LED off.
-//     // This behavior depends on whether the LED is between the pin
-//     // and VCC or the pin and GND.
-//     writePin(A9, led_state.num_lock);
-//     writePin(C14, led_state.caps_lock);
-//     writePin(B6, led_state.scroll_lock);
-//     return false;
-// }
-
-// void matrix_init_kb(void) {
-//   setPinOutput(B1); // Top Indicator LED
-//   setPinOutput(B0); // Middle Indicator LED
-//   setPinOutput(C5); // Bottom Indicator LED
-//   matrix_init_user();
-// }
-
-// // bool led_update_kb(led_t led_state) {
-// //     if(led_update_user(led_state)) {
-// //         writePin(B1, led_state.caps_lock);
-// //         writePin(B0, led_state.num_lock);
-// //         writePin(C5, led_state.scroll_lock);
-// //     }
-// //     return true;
-// // }
-
-// bool led_update_kb(led_t led_state) {
-//     bool res = led_update_user(led_state);
-//     if(res) {
-//         // writePin sets the pin high for 1 and low for 0.
-//         // In this example the pins are inverted, setting
-//         // it low/0 turns it on, and high/1 turns the LED off.
-//         // This behavior depends on whether the LED is between the pin
-//         // and VCC or the pin and GND.
-//         writePin(B0, !led_state.num_lock);
-//         writePin(B1, !led_state.caps_lock);
-//         writePin(B2, !led_state.scroll_lock);
-//         writePin(B3, !led_state.compose);
-//         writePin(B4, !led_state.kana);
-//     }
-//     return res;
-// }
-
-// void matrix_int_user(void){
-//     clear_keyboard();
-// }
+void board_init(void) {
+  // Call the keyboard pre init code.
+  setPinOutput(C11);
+  setPinOutput(D2);
+  setPinOutput(A15);
+}
