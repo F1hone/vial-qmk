@@ -10,13 +10,14 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
+        "backlight": true,
         "nkro": true,
         "via": true,
         "vial": true
     },
     "matrix_pins": {
         "cols": ["C4", "A5", "A4", "A2", "A1", "C2", "C1", "C0", "B6"],
-        "rows": ["A9", "A8", "C9", "C8", "C7", "C6", "B15", "B14", "B13", "B12", "B11", "B10", "B0", "C5", "A7", "A6", "A3", "C3", "B4"]
+        "rows": ["A9", "A8", "C9", "C8", "C7", "C6", "B15", "B14", "B13", "B12", "B11", "B10", "B0", "C5", "A7", "A6", "A3", "C3"]
     },
     "processor": "STM32F103",
     "url": "",
@@ -29,5 +30,11 @@
         "num_lock": "C11",
         "caps_lock": "D2",
         "scroll_lock": "A15"
+    },
+    "backlight": {
+        "pin": "A10",
+        "levels": 10,
+        "on_state": 1,
+        "breathing": true
     }
 }

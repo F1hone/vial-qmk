@@ -25,7 +25,7 @@
 //  #define RGB_DISABLE_AFTER_TIMEOUT 0         // number of ticks to wait until disabling effects
     #define RGB_MATRIX_SLEEP      // turn off effects when suspended
     #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-    
+
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 115   // limits maximum brightness of LEDs to 150 out of 255.
                                                 // Higher may cause the controller to crash.
     #define RGB_MATRIX_HUE_STEP 10
@@ -35,7 +35,7 @@
 
 
 /* By default, the RGB_MATRIX effects are disabled.
- * 
+ *
  * For a complete list, visit: https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-effects.
  * Some of the effects take up a lot of memory, so you may need to manage the number of
  * effects that are loaded at any given time.

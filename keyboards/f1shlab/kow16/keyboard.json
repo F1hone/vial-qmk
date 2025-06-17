@@ -1,0 +1,140 @@
+{
+    "keyboard_name": "Kowgary16",
+    "manufacturer": "F1shlab",
+    "url": "",
+    "maintainer": "qmk",
+    "processor": "STM32F103",
+    "bootloader": "stm32duino",
+    "matrix_pins": {
+        "rows": ["B4", "B5", "B7", "B6"],
+        "cols": ["A7", "B1", "A15", "B3"]
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "rgblight": false,
+        "rgb_matrix": true,
+        "console": false,
+        "command": false,
+        "nkro": true
+    },
+    "usb": {
+        "vid": "0xF1DE",
+        "pid": "0x0004",
+        "device_version": "0.0.2"
+    },
+    "ws2812": {
+        "driver": "pwm",
+        "pin": "B0"
+    },
+    "rgb_matrix": {
+        "driver": "ws2812",
+        "max_brightness": 255,
+        "sleep": true,
+        "default": {
+            "animation": "cycle_left_right",
+            "val": 160,
+            "hue": 90,
+            "speed": 80
+        },
+        "animations": {
+            "alphas_mods": true,
+            "gradient_up_down": true,
+            "gradient_left_right": true,
+            "breathing": true,
+            "band_sat": true,
+            "band_val": true,
+            "band_pinwheel_sat": true,
+            "band_pinwheel_val": true,
+            "band_spiral_sat": true,
+            "band_spiral_val": true,
+            "cycle_all": true,
+            "cycle_left_right": true,
+            "cycle_up_down": true,
+            "rainbow_moving_chevron": true,
+            "cycle_out_in": true,
+            "cycle_out_in_dual": true,
+            "cycle_pinwheel": true,
+            "cycle_spiral": true,
+            "dual_beacon": true,
+            "rainbow_beacon": true,
+            "rainbow_pinwheels": true,
+            "raindrops": true,
+            "jellybean_raindrops": true,
+            "hue_breathing": true,
+            "hue_pendulum": true,
+            "hue_wave": true,
+            "pixel_rain": true,
+            "pixel_flow": true,
+            "pixel_fractal": true,
+            "typing_heatmap": true,
+            "digital_rain": true,
+            "solid_reactive_simple": true,
+            "solid_reactive": true,
+            "solid_reactive_wide": true,
+            "solid_reactive_multiwide": true,
+            "solid_reactive_cross": true,
+            "solid_reactive_multicross": true,
+            "solid_reactive_nexus": true,
+            "solid_reactive_multinexus": true,
+            "splash": true,
+            "multisplash": true,
+            "solid_splash": true,
+            "solid_multisplash": true
+        },
+        "layout": [
+            {"matrix": [0, 0],  "x": 159,  "y": 4, "flags": 1},
+            {"matrix": [0, 1],  "x": 116,  "y": 4, "flags": 4},
+            {"matrix": [0, 2],  "x": 73,   "y": 4, "flags": 4},
+            {"matrix": [0, 3],  "x": 26,   "y": 4, "flags": 4},
+
+            {"matrix": [1, 3],  "x": 26,   "y": 20, "flags": 4},
+            {"matrix": [1, 2],  "x": 73,   "y": 20, "flags": 4},
+            {"matrix": [1, 1],  "x": 116,  "y": 20, "flags": 1},
+            {"matrix": [1, 0],  "x": 159,  "y": 20, "flags": 4},
+
+            {"matrix": [2, 0],  "x": 159,  "y": 36, "flags": 4},
+            {"matrix": [2, 1],  "x": 116,  "y": 36, "flags": 4},
+            {"matrix": [2, 2],  "x": 73,   "y": 36, "flags": 1},
+            {"matrix": [2, 3],  "x": 26,   "y": 36, "flags": 4},
+
+            {"matrix": [3, 3],  "x": 26,   "y": 52, "flags": 1},
+            {"matrix": [3, 2],  "x": 73,   "y": 52, "flags": 4},
+            {"matrix": [3, 1],  "x": 116,  "y": 52, "flags": 4},
+            {"matrix": [3, 0],  "x": 159,  "y": 52, "flags": 4},
+            {"x": 191,  "y": 60, "flags": 2},
+            {"x": 191,  "y": 52, "flags": 2},
+            {"x": 191,  "y": 44, "flags": 2},
+            {"x": 191,  "y": 36, "flags": 2},
+
+            {"x": 191,  "y": 28, "flags": 2},
+            {"x": 191,  "y": 20, "flags": 2},
+            {"x": 191,  "y": 12, "flags": 2},
+            {"x": 191,  "y": 4,  "flags": 2}
+        ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K00 (B0,B4)", "matrix": [0, 0], "x": 0, "y": 0},
+                {"label": "K01 (B0,B5)", "matrix": [0, 1], "x": 1, "y": 0},
+                {"label": "K02 (B0,B6)", "matrix": [0, 2], "x": 2, "y": 0},
+                {"label": "K03 (B0,B7)", "matrix": [0, 3], "x": 3, "y": 0},
+                {"label": "K10 (B1,B4)", "matrix": [1, 0], "x": 0, "y": 1},
+                {"label": "K11 (B1,B5)", "matrix": [1, 1], "x": 1, "y": 1},
+                {"label": "K12 (B1,B6)", "matrix": [1, 2], "x": 2, "y": 1},
+                {"label": "K13 (B1,B7)", "matrix": [1, 3], "x": 3, "y": 1},
+                {"label": "K20 (B2,B4)", "matrix": [2, 0], "x": 0, "y": 2},
+                {"label": "K21 (B2,B5)", "matrix": [2, 1], "x": 1, "y": 2},
+                {"label": "K22 (B2,B6)", "matrix": [2, 2], "x": 2, "y": 2},
+                {"label": "K23 (B2,B7)", "matrix": [2, 3], "x": 3, "y": 2},
+                {"label": "K30 (B3,B4)", "matrix": [3, 0], "x": 0, "y": 3},
+                {"label": "K31 (B3,B5)", "matrix": [3, 1], "x": 1, "y": 3},
+                {"label": "K32 (B3,B6)", "matrix": [3, 2], "x": 2, "y": 3},
+                {"label": "K33 (B3,B7)", "matrix": [3, 3], "x": 3, "y": 3}
+           ]
+        }
+    }
+}

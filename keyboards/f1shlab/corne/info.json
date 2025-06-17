@@ -1,0 +1,41 @@
+{
+    "keyboard_name": "Corne",
+    "manufacturer": "foostan",
+    "url": "",
+    "maintainer": "qmk",
+    "usb": {
+        "vid": "0x4653",
+        "pid": "0x0002",
+        "device_version": "0.0.1"
+    },
+    "rgb_matrix": {
+        "driver": "ws2812"
+    },
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "oled": true,
+        "rgb_matrix": true
+    },
+    "matrix_size": {
+        "cols": 6,
+        "rows": 8
+    },
+    "matrix_pins": {
+        "cols": [ "GP29", "GP28", "GP27", "GP26", "GP22", "GP20" ],
+        "rows": [ "GP4", "GP5", "GP6", "GP7" ]
+    },
+    "diode_direction": "COL2ROW",
+    "split": {
+        "enabled": true
+    },
+    "indicators": {
+        "caps_lock": "GP17",
+        "on_state": 1
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "community_layouts": [ "split_3x5_3", "split_3x6_3" ]
+}
